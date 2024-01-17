@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.box {
+    width: 400px;
+    height: 350px;
+    background: #191919;
+    margin: 50px;
+    position: relative;
+}
+
+
+.box::after {
+    position: absolute;
+    background: #4F77FF;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 200px;
+    margin: 80px;
+    margin-left: 40%;
+    border-radius: 100px 100px 0 0;
+
+}
+
+.box::before {
+    position: absolute;
+    content: "";
+    top: 247px;
+    left: 190px;
+    width: 120px;
+    height: 33px;
+    background: #191919;
+    z-index: 2;
+}
+
+.child::after {
+    position: absolute;
+    content: "";
+    top: 209px;
+    left: 213px;
+    width: 98px;
+    height: 33px;
+    background: #191919;
+    z-index: 2;
+}
+
+.children::after {
+    position: absolute;
+    content: "";
+    top: 171px;
+    left: 245px;
+    width: 80px;
+    height: 33px;
+    background: #191919;
+    z-index: 2;
+}
+
+.title::after {
+    position: absolute;
+    content: "";
+    top: 133px;
+    left: 275px;
+    width: 80px;
+    height: 33px;
+    background: #191919;
+    z-index: 2;
+}
+
+.lamp::after {
+    position: absolute;
+    content: "";
+    top: 90px;
+    left: 230px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.parent {
+    width: 400px;
+    height: 400px;
+    background: #19191A;
+    margin: 50px;
+    position: relative;
+}
+
+.parent::before {
+    position: absolute;
+    background: #4F77FF;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    margin: 15%;
+    margin-left: 25%;
+    border-radius: 50%;
+}
+
+.parent::after {
+    position: absolute;
+    background: #F9E492;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 200px;
+    margin-top: 40%;
+    margin-left: 100px;
+    border-radius: 0 50px 0 0;
+}
